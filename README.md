@@ -1,4 +1,6 @@
-# !!!! Final version - I'm not maintaining this plugin anymore. Recently migrated to Home Assistant.
+# Trying to maintaining this plugin. 
+
+Please send pr if you have some addition from Wizzard72 project.
 
 # Domoticz-Unifi-Presence
 This plugin detects devices - usualy phone(s) - on a Unifi (Controller) network. When a phone is detected on the network it turns on the corresponding switch. If the switch AnyOne is Off it will be turned on. If the last configured phone is off, the switch AnyOne will be switched off.
@@ -37,8 +39,16 @@ It's tested in this setup: Controller, Gateway, Switch, Access Points.
 
 ## Versions
 
-    1.0.0: First release
-    2.0.0: New connection code, new function to block and unblock user devices
+1.0.0: First release
+2.0.0: New connection code, new function to block and unblock user devices
+3.0.0: Third release: complete rewrite of requesting details and creating devices. Delete alle devices and delete the 'devicetable.txt file within de plugin folder.
+3.0.2: Bug resolved
+3.0.4: Bug when using Domoticz container
+3.0.5: Added some checks and USL16LP. New switch added to enable or disable status changes of the internal devices. Phone changes are still reported in the log.
+3.0.6: Added UAP U6-Enterprise and UDR. Not sure if UDR works with the plugin
+3.0.7: Add code (for testing) to solve SSL errors
+3.0.8: Added UniFi Switch Flex
+4.0.0: Changed start sequence.
 
 ## Introduction
 There is a good Dzvents script, but I wanted to create a plugin for this. 
